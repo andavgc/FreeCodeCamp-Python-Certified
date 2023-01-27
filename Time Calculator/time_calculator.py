@@ -45,9 +45,11 @@ def add_time(current_time, added_time, *starting_day):
     if new_hour > 12:
         new_hour -= 12
         new_day_time = "PM"
-    if new_hour == 0:
+    elif new_hour == 0:
         new_hour = 12
         new_day_time = "AM"
+    elif new_hour == 12:
+        new_day_time = "PM"
     else:
         new_day_time = "AM"
 
