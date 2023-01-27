@@ -46,7 +46,6 @@ def arithmetic_arranger(list, show_result=False):
             quarta_linha += f"{result:>{length+2}}    "
         i += 1
         # join every arithmetic operation together
-        #final_result = f''
     if show_result == False:
         return f"{primeira_linha}\n{segunda_linha}\n{terceira_linha}"
     else:
